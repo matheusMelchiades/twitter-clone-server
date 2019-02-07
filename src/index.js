@@ -14,12 +14,12 @@ app.use((req, res, next) => {
     return next();
 });
 
-let corsOptions = {
-    origin: 'https://twitter-app-clone.herokuapp.com',
-    optionsSuccessStatus: 200
-}
+// let corsOptions = {
+//     origin: 'https://twitter-app-clone.herokuapp.com',
+//     optionsSuccessStatus: 200
+// }
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(require('./routes'));
 
