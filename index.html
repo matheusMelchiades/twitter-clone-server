@@ -8,10 +8,9 @@
 <body>
 
     <script type="text/javascript">
-        var socket = io('http://localhost:8080');
+        var socket = io('https://twitter-server-clone.herokuapp.com/');
 
         //tweet, like
-
         socket.on('tweet', function(data) {
             console.log(data);
         });
